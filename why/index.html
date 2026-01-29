@@ -162,7 +162,7 @@
     <div class="window">
         <div class="title-bar">
             <span class="title-bar-text">
-                📄 Founding Mode - WikiWeb Internet Browser
+                📄 Founding Mode
             </span>
             <div class="title-bar-controls">
                 <button>_</button>
@@ -182,7 +182,10 @@
 
         <div class="address-bar">
             <label>Address:</label>
-            <input type="text" value="https://foundingmode.com/essays/why-do-great-work" readonly>
+            <input type="text" id="address-bar" readonly>
+                <script>
+                  document.getElementById('address-bar').value = window.location.href;
+                </script>
         </div>
 
         <div class="content">
